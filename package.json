@@ -9,13 +9,13 @@
     "graphql"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/arisegroup/n8n-nodes-jobber",
+  "homepage": "https://github.com/MatthewKerns/n8n-nodes-jobber",
   "author": {
-    "name": "Arise Group"
+    "name": "Matthew Kerns"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arisegroup/n8n-nodes-jobber.git"
+    "url": "https://github.com/MatthewKerns/n8n-nodes-jobber.git"
   },
   "main": "dist/index.js",
   "scripts": {
