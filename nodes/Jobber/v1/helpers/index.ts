@@ -159,3 +159,37 @@ export const INVOICE_FIELDS = `
 		amountPaid
 	}
 `;
+
+/**
+ * Common fields for Request queries
+ */
+export const REQUEST_FIELDS = `
+	id
+	title
+	requestStatus
+	companyName
+	contactName
+	phone
+	email
+	details
+	source
+	createdAt
+	updatedAt
+	client {
+		id
+		firstName
+		lastName
+		companyName
+	}
+	property {
+		id
+		address {
+			street1
+			street2
+			city
+			province
+			postalCode
+			country
+		}
+	}
+`;

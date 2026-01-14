@@ -3,6 +3,7 @@ import { executeClientOperation } from './client';
 import { executeJobOperation } from './job';
 import { executeQuoteOperation } from './quote';
 import { executeInvoiceOperation } from './invoice';
+import { executeRequestOperation } from './request';
 import { executeGraphQLOperation } from './graphql';
 
 export async function router(
@@ -30,6 +31,9 @@ export async function router(
 					break;
 				case 'invoice':
 					results = await executeInvoiceOperation.call(this, operation, i);
+					break;
+				case 'request':
+					results = await executeRequestOperation.call(this, operation, i);
 					break;
 				case 'graphql':
 					results = await executeGraphQLOperation.call(this, operation, i);
