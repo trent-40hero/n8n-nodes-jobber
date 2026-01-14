@@ -1,11 +1,12 @@
 import type { INodeProperties } from 'n8n-workflow';
 
-export type JobberResource = 'client' | 'job' | 'quote' | 'invoice' | 'graphql';
+export type JobberResource = 'client' | 'job' | 'quote' | 'invoice' | 'request' | 'graphql';
 
 export type ClientOperation = 'get' | 'getMany' | 'create' | 'update' | 'delete';
 export type JobOperation = 'get' | 'getMany' | 'create' | 'update' | 'delete';
 export type QuoteOperation = 'get' | 'getMany' | 'create' | 'update' | 'delete' | 'convertToJob';
 export type InvoiceOperation = 'get' | 'getMany' | 'create' | 'update' | 'delete';
+export type RequestOperation = 'get' | 'getMany' | 'create' | 'update' | 'delete';
 export type GraphQLOperation = 'execute';
 
 export interface ResourceDescription {
@@ -46,6 +47,11 @@ export const resourceProperty: INodeProperties = {
 			name: 'Invoice',
 			value: 'invoice',
 			description: 'Manage invoices',
+		},
+		{
+			name: 'Request',
+			value: 'request',
+			description: 'Manage requests',
 		},
 		{
 			name: 'GraphQL',

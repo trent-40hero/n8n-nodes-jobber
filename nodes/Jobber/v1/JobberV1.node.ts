@@ -10,6 +10,7 @@ import { clientOperations, clientFields } from './actions/client';
 import { jobOperations, jobFields } from './actions/job';
 import { quoteOperations, quoteFields } from './actions/quote';
 import { invoiceOperations, invoiceFields } from './actions/invoice';
+import { requestOperations, requestFields } from './actions/request';
 import { graphqlOperations, graphqlFields } from './actions/graphql';
 import { router } from './actions/router';
 
@@ -47,6 +48,9 @@ export class JobberV1 implements INodeType {
 			// Invoice
 			invoiceOperations,
 			...invoiceFields,
+			// Request
+			requestOperations,
+			...requestFields,
 			// GraphQL
 			graphqlOperations,
 			...graphqlFields,

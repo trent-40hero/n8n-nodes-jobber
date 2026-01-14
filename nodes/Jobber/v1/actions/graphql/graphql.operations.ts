@@ -15,7 +15,7 @@ export const graphqlOperations: INodeProperties = {
 			name: 'Execute',
 			value: 'execute',
 			description: 'Execute a custom GraphQL query or mutation',
-			action: 'Execute GraphQL query',
+			action: 'Execute graph ql query',
 		},
 	],
 	default: 'execute',
@@ -61,7 +61,7 @@ export const graphqlFields: INodeProperties[] = [
 				operation: ['execute'],
 			},
 		},
-		placeholder: '{"id": "abc123"}',
+		placeholder: '{"ID": "abc123"}',
 		description: 'Variables to pass to the GraphQL query (as JSON)',
 	},
 	{
